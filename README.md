@@ -30,6 +30,7 @@ PathSim block interface and can be connected into simulation diagrams.
 | `IonisationChamber` | Flow-through tritium ionisation chamber (signal = ε(c)·c, flux passes through) | `detection_efficiency`, `func_efficiency`, `detection_threshold` |
 | `Bubbler4` | Four-vial tritium sampling bubbler (soluble + insoluble chains, catalytic conversion, scheduled vial replacement) | `conversion_efficiency`, `vial_efficiency`, `replacement_times` |
 | `GLC` | Counter-current bubble-column gas–liquid contactor for tritium extraction from LiPb (Malara 1995, on `BVP1D`) | `P_in`, `L`, `D`, `T`, `BCs` |
+| `SaltCrucible` | 0-D tritium release from a salt crucible (breeding in irradiation windows, release through top surface and wall with time-dependent coefficients) | `radius`, `height`, `TBR`, `neutron_rate`, `k_top`, `k_wall`, `irradiations` |
 
 ## Install
 
