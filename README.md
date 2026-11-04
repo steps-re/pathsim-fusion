@@ -31,6 +31,7 @@ PathSim block interface and can be connected into simulation diagrams.
 | `Bubbler4` | Four-vial tritium sampling bubbler (soluble + insoluble chains, catalytic conversion, scheduled vial replacement) | `conversion_efficiency`, `vial_efficiency`, `replacement_times` |
 | `GLC` | Counter-current bubble-column gas–liquid contactor for tritium extraction from LiPb (Malara 1995, on `BVP1D`) | `P_in`, `L`, `D`, `T`, `BCs` |
 | `SaltCrucible` | 0-D tritium release from a salt crucible (breeding in irradiation windows, release through top surface and wall with time-dependent coefficients) | `radius`, `height`, `TBR`, `neutron_rate`, `k_top`, `k_wall`, `irradiations` |
+| `LSCCounter` | Liquid scintillation counting of the four `Bubbler4` vials at the vial changes (background subtraction, optional quench dependent background) | `count_times`, `background`, `subtracted_background`, `tsie` |
 
 ## Install
 
